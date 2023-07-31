@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Assignment - 10 ( JS - 4 )</title>
+    <link rel="icon" type="image/x-icon" href="imgs/fav-icon.png" />
+    <!-- stylesheets link -->
+    <!-- font awesome -->
+    <link rel="stylesheet" href="css/all.min.css" />
+    <!-- bootstrap -->
+    <link rel="stylesheet" href="css/bootstrap.min.css" />
+    <!-- google fonts -->
+    <link
+      href="https://fonts.googleapis.com/css2?family=Ubuntu:wght@300;400;500;700&display=swap"
+      rel="stylesheet"
+    />
+    <!-- custom stylesheets -->
+    <link rel="stylesheet" href="css/style.css" />
+    <link rel="stylesheet" href="css/media.css" />
+  </head>
+  <body>
+    <header class="login">
+      <div class="container">
+        <div class="login-body">
+          <div class="row align-items-center justify-content-center">
+            <div class="col-md-5">
+              <div class="login-img">
+                <img src="imgs/login.jpg" alt="" class="img-fluid" />
+              </div>
+            </div>
+            <div class="col-md-5">
+              <div class="login-form">
+                <h3>SIGN IN</h3>
+                <form action="">
+                  <div class="mail-input">
+                    <div class="input-group flex-nowrap">
+                      <span class="input-group-text" id="addon-wrapping"
+                        ><i class="fa-solid fa-envelope"></i
+                      ></span>
+                      <input
+                        id="signInEmail"
+                        type="email"
+                        class="form-control"
+                        placeholder="Email"
+                        aria-label="Username"
+                        aria-describedby="addon-wrapping"
+                      />
+                    </div>
+                  </div>
+                  <div class="password-input">
+                    <div class="input-group flex-nowrap">
+                      <span class="input-group-text" id="addon-wrapping"
+                        ><i class="fa-solid fa-lock"></i
+                      ></span>
+                      <input
+                        id="signInPassword"
+                        type="password"
+                        class="form-control"
+                        placeholder="Password"
+                        aria-label="Username"
+                        aria-describedby="addon-wrapping"
+                      />
+                    </div>
+                  </div>
+                  <p id="loginError" class="alert text-danger d-none">
+                    Your email or password is wrong or cant be empty
+                  </p>
+                  <a id="signInBtn" class="submit d-block m-auto mb-5">
+                    Login
+                  </a>
+                </form>
+                <a href="pages/signup.html">Do not have an account ? Sign Up</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </header>
+    <script src="js/signin.js"></script>
+    <!-- <script src="js/custom.js"></script> -->
+  </body>
+</html>
+<a href="/index.html"></a>

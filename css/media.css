@@ -1,0 +1,12 @@
+@media (min-width: 1400px) {
+  .login .container {
+    height: calc(100vh - 100px);
+  }
+}
+@media (max-width: 1400px) {
+  .registration .container {
+    position: relative;
+    top: 50%;
+    transform: translateY(-50%);
+  }
+}

@@ -1,0 +1,241 @@
+/* global */
+body {
+  font-family: "Ubuntu", sans-serif;
+}
+:root {
+  --main-color: #46c8f9;
+  --secondary-color: #7938f4;
+  --white-color: #fff;
+  --background-color: #e6e6e6;
+  --text-color: #717171;
+}
+.form-control.is-invalid,
+.form-control.is-valid {
+  background-position: right calc(1em + 0.1875rem) center;
+}
+/* body */
+.login {
+  min-height: calc(100vh - 100px);
+  background: linear-gradient(
+    -135deg,
+    var(--main-color),
+    var(--secondary-color)
+  );
+  padding: 50px 0;
+}
+.login .container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: calc(100vh - 100px);
+}
+.login-body {
+  background-color: var(--white-color);
+  min-height: 90%;
+  min-width: 90%;
+  padding: 50px 0;
+  border-radius: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  box-shadow: 0 0 20px 3px #773df4c2;
+}
+.login-form {
+  text-align: center;
+}
+.login-form h3 {
+  font-weight: 900;
+  color: #4cb7f9;
+  margin-bottom: 50px;
+}
+
+.input-group {
+  margin: auto;
+  width: 80%;
+  margin-bottom: 20px;
+}
+.input-group-text {
+  border: none;
+  background-color: var(--background-color);
+  padding: 20px 20px;
+  border-top-left-radius: 4rem;
+  border-bottom-left-radius: 4rem;
+  color: var(--text-color);
+}
+.form-control {
+  border: none;
+  background-color: var(--background-color);
+  border-top-right-radius: 4rem;
+  border-bottom-right-radius: 4rem;
+  color: var(--text-color);
+}
+.form-control:focus {
+  background-color: var(--background-color);
+}
+.form-control::placeholder {
+  color: rgb(181, 181, 181);
+}
+.submit {
+  border: none;
+  background-color: var(--background-color);
+  border-radius: 4rem;
+  color: var(--text-color);
+  padding: 20px 20px;
+  width: 80%;
+  margin: 25px 0 20px;
+  transition: all 0.5s ease;
+  cursor: pointer;
+  text-decoration: none;
+}
+.submit:hover {
+  background-color: #46c8f9;
+  color: var(--white-color);
+}
+i {
+  position: relative;
+  left: 5px;
+}
+a {
+  color: var(--text-color);
+  transition: all 0.5s ease;
+}
+a:hover {
+  color: var(--main-color);
+}
+.home {
+  height: 100vh;
+  background: linear-gradient(
+    -135deg,
+    var(--main-color),
+    var(--secondary-color)
+  );
+}
+nav {
+  height: 70px;
+  background-color: var(--white-color);
+  box-shadow: 0 0 20px 3px #773df4c2;
+}
+nav .container {
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+nav img {
+  width: 10%;
+}
+nav .log-out {
+  padding: 10px 20px;
+  border-radius: 4rem;
+  background: linear-gradient(
+    -135deg,
+    var(--main-color),
+    var(--secondary-color)
+  );
+  color: white;
+  border: none;
+  position: relative;
+  text-decoration: none;
+}
+nav .log-out::after {
+  content: "Logout";
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  right: 0;
+  background: linear-gradient(
+    -135deg,
+    var(--secondary-color),
+    var(--main-color)
+  );
+  padding: 10px 20px;
+  border-radius: 4rem;
+  opacity: 0;
+  color: white;
+  border: none;
+  transition: all 0.5s ease;
+}
+nav .log-out:hover::after {
+  opacity: 1;
+}
+.home-header {
+  height: 80%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 40px;
+}
+.home-header .container {
+  min-height: 90%;
+  min-width: 80%;
+  margin: auto;
+  background-color: var(--white-color);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  border-radius: 10px;
+  box-shadow: 0 0 20px 3px #773df4c2;
+}
+
+.home-header .container h1 {
+  color: var(--main-color);
+  font-size: 5rem;
+  font-weight: bold;
+  text-align: center;
+}
+
+/* successfully registered */
+.registration {
+  position: absolute;
+  top: 0;
+  left: 0;
+  background-color: rgba(0, 0, 0, 0.5);
+  width: 100%;
+  height: 100%;
+}
+.congratulation {
+  background-color: var(--white-color);
+  border-radius: 10px;
+  padding: 50px;
+  text-align: center;
+}
+.congratulation h1 {
+  color: var(--main-color);
+}
+.congratulation .log-in {
+  padding: 10px 20px;
+  margin: 20px 50px;
+  display: block;
+  border-radius: 4rem;
+  background: linear-gradient(
+    -135deg,
+    var(--main-color),
+    var(--secondary-color)
+  );
+  color: white;
+  border: none;
+  position: relative;
+  text-decoration: none;
+}
+/* trying to visit home without registration */
+.scam {
+  height: 100vh;
+  background: linear-gradient(
+    -135deg,
+    var(--main-color),
+    var(--secondary-color)
+  );
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+.scam > div {
+  background-color: white;
+  border-radius: 10px;
+  padding: 50px;
+  text-align: center;
+}
